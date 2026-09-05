@@ -1,6 +1,5 @@
 :root {
     --primary-color: #1e293b;
-    --primary-text: #0f172a;
     --secondary-text: #ffffff;
     --accent-color: #0e4323;
     --accent-hover: #0f766e;
@@ -126,7 +125,7 @@ h2 {
     display: flex;
     flex-direction: column;
     background-color: var(--card-background);
-    color: var(--primary-text);
+    color: var(--primary-color);
 }
 
 .about p {
@@ -199,7 +198,7 @@ h2 {
     text-align: center;
     margin: 1.5rem 0;
     font-size: 1.1rem;
-    color: var(--primary-text);
+    color: var(--primary-color);
 }
 
 .course-list {
@@ -267,7 +266,7 @@ footer p {
 }
 
 .footer-info p {
-    color: var(--primary-text);
+    color: var(--primary-color);
     font-size: 1rem;
     margin: 0.25rem 0;
     text-align: center;
