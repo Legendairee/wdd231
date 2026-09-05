@@ -1,1 +1,103 @@
-WDD231 Course.
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Web development course portfolio and projects of Mathew Udowa Oghenemairo for WDD 231 | Web Frontend Development(I).">
+        <meta name="author" content="Mathew Udowa Oghenemairo">
+        <title>Mathew Udowa | Student Course Profile</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400..600;1,400..600&family=Roboto:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/large.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+        <script src="scripts/footer.js" defer></script>
+    </head>
+
+    <body>
+        <!-- This is the header section -->
+        <header>
+            <img src="./images/school.svg" alt="Site logo" width="512" height="512">
+            <span>Mathew Udowa</span>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+        </header>
+
+        <!-- This is the navigation section -->
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+        <!-- This is the main content -->
+        <main>
+            <div class="main-container">
+                <h1>Home</h1>
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! My name is Mathew Udowa and I am from Lagos State, Nigeria. I am currently a
+                        student of BYU Pathway Worldwide, studying
+                        web development. I am passionate
+                        about building highly responsive and intuitive web applications for the tech
+                        community.
+                    </p>
+                </section>
+                <section class="profile-image">
+                    <h2>Student Photo</h2>
+                    <img src="./images/profile.jpg" alt="Mathew profile image" width="100" height="100">
+                </section>
+                <section class="cards">
+                    <h2>Web and Computer Programming Certificate</h2>
+
+                    <ul class="courses-button">
+                        <li><button type="button" id="all">All Courses</button></li>
+                        <li><button type="button" id="wdd">WDD Courses</button></li>
+                        <li><button type="button" id="cse">CSE Courses</button></li>
+                    </ul>
+
+                    <div id="course-list" class="course-list"></div>
+
+                    <p id="course-count"></p>
+                </section>
+            </div>
+        </main>
+
+        <!-- The footer -->
+        <footer>
+            <div class="social">
+                <a href="https://facebook.com/profile.php?id=100001974445466" target="_blank"
+                    aria-label="Facebook Profile">
+                    <img src="./images/facebook.svg" alt="Facebook logo" width="16" height="16">
+                </a>
+                <a href="https://github.com/Legendairee" target="_blank" aria-label="GitHub Profile">
+                    <img src="./images/github.svg" alt="GitHub logo" width="16" height="16">
+                </a>
+                <a href="https://www.linkedin.com/in/mathew-udowa-0b61343a7/" target="_blank"
+                    aria-label="LinkedIn Profile">
+                    <img src="./images/linkedin.svg" alt="LinkedIn logo" width="16" height="16">
+                </a>
+                <a href="https://x.com/DayWalkercrypt" target="_blank" aria-label="X Profile">
+                    <img src="./images/twitter-x.svg" alt="X logo" width="16" height="16">
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Lagos, Nigeria.</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #1e293b;
+    --primary-text: #0f172a;
+    --secondary-text: #ffffff;
+    --accent-color: #0e4323;
+    --accent-hover: #0f766e;
+    --completed-background: #f0fdf4;
+    --completed-text: #025522;
+    --hover-color: orange;
+    --card-background: #e2e8f0;
+    --border-color: #cbd5e1;
+    --font-body: 'Roboto', sans-serif;
+    --font-heading: 'Josefin Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+
+/*  This is my header */
+header {
+    display: grid;
+    grid-template-columns: 40px auto 44px;
+    background-color: var(--card-background);
+    align-items: center;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid var(--border-color);
+    gap: 20px;
+}
+
+header img {
+    display: block;
+    width: 50px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* The Navigation */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    color: var(--secondary-text);
+    background-color: var(--primary-color);
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 0.82rem 10px;
+    color: var(--secondary-text);
+    font-weight: 500;
+    font-family: var(--font-heading);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navigation a:hover,
+.navigation li.current a {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+}
+
+/* The Main Content */
+main {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+}
+
+main h1 {
+    font-family: var(--font-heading);
+    margin: 0.6rem 0;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--secondary-text);
+    background-color: var(--primary-color);
+    font-size: 0.9rem;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* The About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background);
+    color: var(--primary-text);
+}
+
+.about p {
+    padding: 1rem 6px;
+}
+
+/* The Profile Image */
+.profile-image {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: var(--card-background);
+    align-items: center;
+}
+
+.profile-image img {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.profile-image h2 {
+    width: 100%;
+}
+
+/* Courses Section */
+.cards {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards h2 {
+    width: 100%;
+    padding: 5px;
+}
+
+.courses-button {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+    width: 100%;
+}
+
+.courses-button button {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--secondary-text);
+    border: none;
+    padding: 0.6rem .2rem;
+    border-radius: 8px;
+    font-size: .8rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.courses-button button:hover {
+    background-color: var(--accent-hover);
+}
+
+#course-count {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    color: var(--primary-text);
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.course-card {
+    background-color: var(--accent-color);
+    color: var(--secondary-text);
+    text-align: center;
+    padding: .6rem;
+    border-radius: 8px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.course-card.completed {
+    background-color: var(--completed-background);
+    color: var(--completed-text);
+    border: 1px solid #bbf7d0;
+}
+
+/* The Footer */
+footer {
+    width: 100%;
+    padding: 1.5rem 0 0 0;
+    text-align: center;
+}
+
+footer p {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border: none;
+    background: transparent;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.footer-info {
+    background-color: var(--card-background);
+    padding: 1rem 10px;
+}
+
+.footer-info p {
+    color: var(--primary-text);
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    text-align: center;
+}
+
+.social a:hover {
+    border-radius: 22px;
+    background-color: var(--border-color);
+}
