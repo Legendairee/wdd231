@@ -76,7 +76,7 @@ function displayCourses(courseArray) {
         return sum + course.credits;
     }, 0);
 
-    courseCount.textContent = `The total number of credits listed below is ${totalCredits}`;
+    courseCount.textContent = `The total number of course credits listed above is ${totalCredits}`;
 
     courseList.innerHTML = courseArray.map(course => {
         return `
