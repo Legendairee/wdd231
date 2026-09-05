@@ -14,8 +14,12 @@
     }
 
     header img {
-        width: 50px;
+        width: 60px;
         height: auto;
+    }
+
+    header span {
+        font-size: 2rem;
     }
 
     /* The Navigation */
@@ -48,6 +52,7 @@
     }
 
     .main-container h1 {
+        font-size: 2rem;
         grid-column: 1 / -1;
     }
 
@@ -64,6 +69,10 @@
         grid-column: 1 / -1;
     }
 
+    h2 {
+        font-size: 1.1rem;
+    }
+
     /* Profile Image */
     .profile-image img {
         width: 130px;
@@ -73,12 +82,6 @@
     /* Courses Section */
     .cards {
         margin: 10px 0;
-    }
-
-    .courses-button {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin: 1.5rem 0;
     }
 
     .courses-button button {
