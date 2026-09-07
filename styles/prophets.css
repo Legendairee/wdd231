@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #0d5c75;
+    --card-bg: #e0f2f1;
+    --card-border: #80cbc4;
+    --text-color: #1a252c;
+    --body-bg: #f4f7f6;
+    --heading-font: 'Josefin Sans', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --footer-text: #ffffff;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--body-bg);
+    text-align: center;
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+}
+
+section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+section p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+    color: var(--text-color);
+}
+
+section img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    margin-top: 1rem;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.85);
+}
+
+.footer-info {
+    background-color: var(--primary-color);
+    padding: 1rem 10px;
+}
+
+.footer-info p {
+    color: var(--footer-text);
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    text-align: center;
+}
