@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Eko Logistics",
+        "tagline": "Freight Solutions",
+        "address": "14 Commercial Avenue, Sabo Yaba, Lagos State",
+        "phone": "+234 915 453 9081",
+        "email": "contact@ekologistics.ng",
+        "website": "https://www.ekologistics.ng",
+        "image": "./images/logoipsum-223.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Financial Advisory",
+        "tagline": "Capital Solutions",
+        "address": "8 Admiralty Way, Lekki Phase 1, Lagos State",
+        "phone": "+234 802 334 1122",
+        "email": "info@lekkifinancial.com.ng",
+        "website": "https://www.lekkifinancial.com.ng",
+        "image": "./images/logoipsum-224.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Island Tech Labs",
+        "tagline": "Innovating Software Tech",
+        "address": "22 Adeola Odeku, Victoria Island, Lagos State",
+        "phone": "+234 813 555 9876",
+        "email": "hello@vitechlabs.ng",
+        "website": "https://www.vitechlabs.ng",
+        "image": "./images/logoipsum-226.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Crest Real Estate",
+        "tagline": "Premium Residential",
+        "address": "45 Kingsway Road, Ikoyi, Lagos State",
+        "phone": "+234 701 444 8820",
+        "email": "enquiries@atlanticcrest.ng",
+        "website": "https://www.crest.ng",
+        "image": "./images/logoipsum-241.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Ikeja Green Power",
+        "tagline": "Reliable Energy Solutions",
+        "address": "12 Mobolaji Bank Anthony Way, Ikeja, Lagos State",
+        "phone": "+234 809 112 3344",
+        "email": "sales@ikejagreenpower.com",
+        "website": "https://www.ikejagreenpower.com",
+        "image": "./images/logoipsum-245.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Eko Law",
+        "tagline": "Corporate & Commercial Law",
+        "address": "10 Broad Street, Marina, Lagos Island, Lagos State",
+        "phone": "+234 702 270 4410",
+        "email": "legal@zarialaw.ng",
+        "website": "https://www.zarialaw.ng",
+        "image": "./images/logoipsum-246.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Mainland Craft Coffee",
+        "tagline": "Artisanal Nigerian Coffee",
+        "address": "33 Herbert Macaulay Way, Ebute Metta, Lagos State",
+        "phone": "+234 818 776 5432",
+        "email": "brew@mainlandcoffee.ng",
+        "website": "https://www.mainlandcoffee.ng",
+        "image": "./images/logoipsum-247.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Agro-Allied Processing",
+        "tagline": "Quality Food Processing",
+        "address": "55 Bode Thomas Street, Surulere, Lagos State",
+        "phone": "+234 803 998 7711",
+        "email": "info@surulereagro.com",
+        "website": "https://www.surulereagro.com",
+        "image": "./images/logoipsum-249.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Maryland Digital Media",
+        "tagline": "Data-Driven Marketing",
+        "address": "18 Ikorodu Road, Maryland, Lagos State",
+        "phone": "+234 812 665 4433",
+        "email": "growth@marylandmedia.ng",
+        "website": "https://www.marylandmedia.ng",
+        "image": "./images/logoipsum-292.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Trade & Import Hub",
+        "tagline": "Commerce for Global Markets",
+        "address": "21 Road, Festac Town, Lagos State",
+        "phone": "+234 805 221 8899",
+        "email": "support@festactrade.ng",
+        "website": "https://www.festactrade.ng",
+        "image": "./images/logoipsum-415.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Event Management",
+        "tagline": "Happy Event Production",
+        "address": "7 Isaac John Street, GRA Ikeja, Lagos State",
+        "phone": "+234 814 332 1100",
+        "email": "events@ekosound.ng",
+        "website": "https://www.ekosound.ng",
+        "image": "./images/logoipsum-370.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Palms Healthcare",
+        "tagline": "Diagnostic & Preventive Care",
+        "address": "15 Bisway Street, Maroko, Oniru, Lagos State",
+        "phone": "+234 1 905 1234",
+        "email": "care@palmshealth.ng",
+        "website": "https://www.palmshealth.ng",
+        "image": "./images/logoipsum-411.png",
+        "membershipLevel": 3
+    }
+]

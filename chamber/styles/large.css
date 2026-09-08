@@ -1,0 +1,63 @@
+@media only screen and (min-width: 38rem) {
+
+    header img {
+        width: 60px;
+        height: auto;
+    }
+
+    header span {
+        font-size: 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        margin-top: 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        color: var(--primary-color);
+    }
+
+    .mode-toggle {
+        margin-left: 65px;
+        font-size: 2.5rem;
+    }
+
+    .directory-header h1 {
+        font-size: 2.2rem;
+    }
+
+    #members-container.list-layout .member-card {
+        display: grid;
+        grid-template-columns: 1.2fr 1.5fr 1fr 1.3fr;
+        align-items: center;
+        padding: 0.9rem 1.2rem;
+        background-color: #ffffff;
+        border-radius: 0;
+        gap: 0.8rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-center {
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+}
