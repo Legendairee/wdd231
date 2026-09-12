@@ -6,7 +6,7 @@
         "phone": "+234 915 453 9081",
         "email": "contact@ekologistics.ng",
         "website": "https://www.ekologistics.ng",
-        "image": "./images/logoipsum-223.png",
+        "image": "./images/logoipsum-223.webp",
         "membershipLevel": 3
     },
     {
@@ -16,7 +16,7 @@
         "phone": "+234 802 334 1122",
         "email": "info@lekkifinancial.com.ng",
         "website": "https://www.lekkifinancial.com.ng",
-        "image": "./images/logoipsum-224.png",
+        "image": "./images/logoipsum-224.webp",
         "membershipLevel": 3
     },
     {
@@ -26,7 +26,7 @@
         "phone": "+234 813 555 9876",
         "email": "hello@vitechlabs.ng",
         "website": "https://www.vitechlabs.ng",
-        "image": "./images/logoipsum-226.png",
+        "image": "./images/logoipsum-226.webp",
         "membershipLevel": 2
     },
     {
@@ -36,7 +36,7 @@
         "phone": "+234 701 444 8820",
         "email": "enquiries@atlanticcrest.ng",
         "website": "https://www.crest.ng",
-        "image": "./images/logoipsum-241.png",
+        "image": "./images/logoipsum-241.webp",
         "membershipLevel": 3
     },
     {
@@ -46,7 +46,7 @@
         "phone": "+234 809 112 3344",
         "email": "sales@ikejagreenpower.com",
         "website": "https://www.ikejagreenpower.com",
-        "image": "./images/logoipsum-245.png",
+        "image": "./images/logoipsum-245.webp",
         "membershipLevel": 2
     },
     {
@@ -56,7 +56,7 @@
         "phone": "+234 702 270 4410",
         "email": "legal@zarialaw.ng",
         "website": "https://www.zarialaw.ng",
-        "image": "./images/logoipsum-246.png",
+        "image": "./images/logoipsum-246.webp",
         "membershipLevel": 1
     },
     {
@@ -66,7 +66,7 @@
         "phone": "+234 818 776 5432",
         "email": "brew@mainlandcoffee.ng",
         "website": "https://www.mainlandcoffee.ng",
-        "image": "./images/logoipsum-247.png",
+        "image": "./images/logoipsum-247.webp",
         "membershipLevel": 1
     },
     {
@@ -76,7 +76,7 @@
         "phone": "+234 803 998 7711",
         "email": "info@surulereagro.com",
         "website": "https://www.surulereagro.com",
-        "image": "./images/logoipsum-249.png",
+        "image": "./images/logoipsum-249.webp",
         "membershipLevel": 2
     },
     {
@@ -86,7 +86,7 @@
         "phone": "+234 812 665 4433",
         "email": "growth@marylandmedia.ng",
         "website": "https://www.marylandmedia.ng",
-        "image": "./images/logoipsum-292.png",
+        "image": "./images/logoipsum-292.webp",
         "membershipLevel": 2
     },
     {
@@ -96,7 +96,7 @@
         "phone": "+234 805 221 8899",
         "email": "support@festactrade.ng",
         "website": "https://www.festactrade.ng",
-        "image": "./images/logoipsum-415.png",
+        "image": "./images/logoipsum-415.webp",
         "membershipLevel": 1
     },
     {
@@ -106,7 +106,7 @@
         "phone": "+234 814 332 1100",
         "email": "events@ekosound.ng",
         "website": "https://www.ekosound.ng",
-        "image": "./images/logoipsum-370.png",
+        "image": "./images/logoipsum-370.webp",
         "membershipLevel": 2
     },
     {
@@ -116,7 +116,7 @@
         "phone": "+234 1 905 1234",
         "email": "care@palmshealth.ng",
         "website": "https://www.palmshealth.ng",
-        "image": "./images/logoipsum-411.png",
+        "image": "./images/logoipsum-411.webp",
         "membershipLevel": 3
     }
 ]

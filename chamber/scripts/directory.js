@@ -1,4 +1,3 @@
-
 const navigationButton = document.querySelector("#ham-btn");
 const navigationBar = document.querySelector("#nav-bar");
 
