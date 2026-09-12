@@ -36,7 +36,7 @@ function displayMembers(members) {
 
         listItem.innerHTML = `
             <div class="card-header">
-                <h3 class="member-name">${member.name}</h3>
+                <h2 class="member-name">${member.name}</h2>
                 <p class="member-tagline hide-in-list">${member.tagline}</p>
             </div>
             <hr class="card-divider hide-in-list">
