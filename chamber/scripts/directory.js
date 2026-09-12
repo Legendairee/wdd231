@@ -1,15 +1,19 @@
+// This is the DOM element section
 const navigationButton = document.querySelector("#ham-btn");
 const navigationBar = document.querySelector("#nav-bar");
+const membersContainer = document.getElementById('members-container');
+const gridBtn = document.getElementById('grid-view');
+const listBtn = document.getElementById('list-view');
 
+
+// The navigation and hamburger menu
 navigationButton.addEventListener("click", () => {
     navigationButton.classList.toggle("show");
     navigationBar.classList.toggle("show");
 });
 
-const membersContainer = document.getElementById('members-container');
-const gridBtn = document.getElementById('grid-view');
-const listBtn = document.getElementById('list-view');
 
+// This is the data fetching rendering section
 async function getMembers() {
     try {
         const response = await fetch('data/members.json');
@@ -25,7 +29,7 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-    membersContainer.innerHTML = '';
+    const fragment = document.createDocumentFragment();
 
     members.forEach((member) => {
         const listItem = document.createElement('li');
@@ -40,7 +44,7 @@ function displayMembers(members) {
             </div>
             <hr class="card-divider hide-in-list">
             <div class="card-body">
-                <img class="hide-in-list" src="${member.image}" alt="Logo for ${member.name}" width="100" height="100" loading="lazy">
+                <img class="hide-in-list" src="${member.image}" alt="Logo for ${member.name}" width="100" height="100" loading="lazy" decoding="async">
                 <div class="card-info">
                     <p class="info-email hide-in-list"><strong>EMAIL:</strong> ${member.email}</p>
                     <p class="info-phone"><strong class="hide-in-list">PHONE:</strong> ${member.phone}</p>
@@ -50,10 +54,14 @@ function displayMembers(members) {
             </div>
             <p class="member-address">${member.address}</p>
         `;
-        membersContainer.appendChild(listItem);
+        fragment.appendChild(listItem);
     });
+
+    membersContainer.innerHTML = '';
+    membersContainer.appendChild(fragment);
 }
 
+// This is the grid and list toggle control
 gridBtn.addEventListener('click', () => {
     membersContainer.classList.add('grid-layout');
     membersContainer.classList.remove('list-layout');
@@ -70,6 +78,7 @@ listBtn.addEventListener('click', () => {
 
 getMembers();
 
+// This is the current year and date modified section
 const currentYear = document.querySelector("#year");
 const lastModified = document.querySelector("#lastModified");
 
