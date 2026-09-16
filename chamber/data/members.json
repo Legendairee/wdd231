@@ -7,7 +7,7 @@
         "email": "contact@ekologistics.ng",
         "website": "https://www.ekologistics.ng",
         "image": "./images/logoipsum-223.webp",
-        "membershipLevel": 3
+        "membershipLevel": "Gold"
     },
     {
         "name": "Financial Advisory",
@@ -17,7 +17,7 @@
         "email": "info@lekkifinancial.com.ng",
         "website": "https://www.lekkifinancial.com.ng",
         "image": "./images/logoipsum-224.webp",
-        "membershipLevel": 3
+        "membershipLevel": "Gold"
     },
     {
         "name": "Island Tech Labs",
@@ -27,7 +27,7 @@
         "email": "hello@vitechlabs.ng",
         "website": "https://www.vitechlabs.ng",
         "image": "./images/logoipsum-226.webp",
-        "membershipLevel": 2
+        "membershipLevel": "Silver"
     },
     {
         "name": "Crest Real Estate",
@@ -37,7 +37,7 @@
         "email": "enquiries@atlanticcrest.ng",
         "website": "https://www.crest.ng",
         "image": "./images/logoipsum-241.webp",
-        "membershipLevel": 3
+        "membershipLevel": "Gold"
     },
     {
         "name": "Ikeja Green Power",
@@ -47,7 +47,7 @@
         "email": "sales@ikejagreenpower.com",
         "website": "https://www.ikejagreenpower.com",
         "image": "./images/logoipsum-245.webp",
-        "membershipLevel": 2
+        "membershipLevel": "Silver"
     },
     {
         "name": "Eko Law",
@@ -57,7 +57,7 @@
         "email": "legal@zarialaw.ng",
         "website": "https://www.zarialaw.ng",
         "image": "./images/logoipsum-246.webp",
-        "membershipLevel": 1
+        "membershipLevel": "Member"
     },
     {
         "name": "Mainland Craft Coffee",
@@ -67,7 +67,7 @@
         "email": "brew@mainlandcoffee.ng",
         "website": "https://www.mainlandcoffee.ng",
         "image": "./images/logoipsum-247.webp",
-        "membershipLevel": 1
+        "membershipLevel": "Member"
     },
     {
         "name": "Agro-Allied Processing",
@@ -77,7 +77,7 @@
         "email": "info@surulereagro.com",
         "website": "https://www.surulereagro.com",
         "image": "./images/logoipsum-249.webp",
-        "membershipLevel": 2
+        "membershipLevel": "Silver"
     },
     {
         "name": "Maryland Digital Media",
@@ -87,7 +87,7 @@
         "email": "growth@marylandmedia.ng",
         "website": "https://www.marylandmedia.ng",
         "image": "./images/logoipsum-292.webp",
-        "membershipLevel": 2
+        "membershipLevel": "Silver"
     },
     {
         "name": "Trade & Import Hub",
@@ -97,7 +97,7 @@
         "email": "support@festactrade.ng",
         "website": "https://www.festactrade.ng",
         "image": "./images/logoipsum-415.webp",
-        "membershipLevel": 1
+        "membershipLevel": "Member"
     },
     {
         "name": "Event Management",
@@ -107,7 +107,7 @@
         "email": "events@ekosound.ng",
         "website": "https://www.ekosound.ng",
         "image": "./images/logoipsum-370.webp",
-        "membershipLevel": 2
+        "membershipLevel": "Silver"
     },
     {
         "name": "Palms Healthcare",
@@ -117,6 +117,6 @@
         "email": "care@palmshealth.ng",
         "website": "https://www.palmshealth.ng",
         "image": "./images/logoipsum-411.webp",
-        "membershipLevel": 3
+        "membershipLevel": "Gold"
     }
 ]
