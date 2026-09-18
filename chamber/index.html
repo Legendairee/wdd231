@@ -18,6 +18,8 @@
         <meta property="og:site_name" content="Eko Chamber of Commerce">
         <title>Eko Chamber of Commerce | Home</title>
 
+        <link rel="canonical" href="https://legendairee.github.io/wdd231/chamber/index.html">
+        <link rel="preconnect" href="https://api.openweathermap.org">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet"
@@ -28,7 +30,7 @@
                 href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..600;1,100..600&display=swap">
         </noscript>
 
-        <link rel="preload" as="image" href="./images/logoipsum-339.webp" fetchpriority="high">
+        <link rel="preload" as="image" href="./images/hero.webp" fetchpriority="high">
         <link rel="icon" href="./images/head-image.ico">
 
         <link rel="stylesheet" href="./styles/normalize.css">
@@ -42,8 +44,7 @@
 
         <!-- This is my header section -->
         <header>
-            <img src="./images/logoipsum-339.webp" alt="Eko Chamber Logo" width="60" height="60" fetchpriority="high"
-                decoding="async">
+            <img src="./images/logoipsum-339.webp" alt="Eko Chamber Logo" width="60" height="60" decoding="async">
             <span>Eko Chamber of Commerce</span>
             <button id="mode-btn" class="mode-toggle" aria-label="Toggle Dark Mode">◐</button>
             <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
@@ -66,8 +67,8 @@
             </div>
 
             <section class="hero-container">
-                <img src="./images/hero.webp" alt="Lagos Business Skyline" class="hero-img" loading="eager" width="1200"
-                    height="500">
+                <img src="./images/hero.webp" alt="Lagos Business Skyline" class="hero-img" loading="eager"
+                    fetchpriority="high" width="1200" height="500">
                 <div class="hero-cta">
                     <h2>Empowering Commerce in Lagos</h2>
                     <p>Connect with leading enterprises and accelerate your growth.</p>
