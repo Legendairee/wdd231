@@ -2,22 +2,21 @@
 <html lang="en">
 
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
-            content="Explore the official member directory of the Eko Chamber of Commerce. An independent, private business network connecting enterprises within Lagos.">
+            content="Welcome to the Eko Chamber of Commerce. Connecting, empowering, and advocating for private enterprises and commercial leaders across Lagos State.">
         <meta name="keywords"
-            content="Eko Chamber of Commerce, Lagos Businesses, Independent Business Association, Private Sector Nigeria, West Africa Trade">
+            content="Eko Chamber of Commerce, Lagos Businesses, Business Network, Trade Nigeria, Commerce Lagos">
         <meta name="author" content="Eko Chamber of Commerce">
-        <meta property="og:title" content="Eko Chamber of Commerce | Business Directory">
+        <meta property="og:title" content="Eko Chamber of Commerce | Home Page">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.ekochamber.ng/directory.html">
+        <meta property="og:url" content="https://legendairee.github.io/wdd231/chamber/index.html">
         <meta property="og:image" content="https://legendairee.github.io/wdd231/chamber/images/facebook-tag.jpg">
         <meta property="og:description"
-            content="Connect with trusted private enterprises, commercial leaders, and innovative startups through the Eko Chamber of Commerce directory.">
+            content="Empowering enterprise across Lagos. Join the premier network of business leaders and innovative startups today.">
         <meta property="og:site_name" content="Eko Chamber of Commerce">
-        <title>Eko Chamber of Commerce | Member Directory</title>
+        <title>Eko Chamber of Commerce | Home</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +35,12 @@
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/large.css">
 
-        <script src="scripts/directory.js" defer></script>
+        <script type="module" src="scripts/main.js"></script>
     </head>
 
     <body>
 
-         <!-- The header section -->
+        <!-- This is my header section -->
         <header>
             <img src="./images/logoipsum-339.webp" alt="Eko Chamber Logo" width="60" height="60" fetchpriority="high"
                 decoding="async">
@@ -53,27 +52,66 @@
         <!-- This is the navigation -->
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
 
-        <!-- This is my main section -->
-        <main>
-            <div class="directory-header">
-                <h1>Directory</h1>
-                <div class="view-buttons">
-                    <button id="grid-view" class="active-btn" aria-label="Grid View">Grid</button>
-                    <button id="list-view" aria-label="List View">List</button>
-                </div>
+        <!-- This is the home page main content -->
+        <main class="home-main">
+            <div class="page-header">
+                <h1>Home</h1>
             </div>
 
-            <ul id="members-container" class="grid-layout"></ul>
+            <section class="hero-container">
+                <img src="./images/hero.webp" alt="Lagos Business Skyline" class="hero-img" loading="eager" width="1200"
+                    height="500">
+                <div class="hero-cta">
+                    <h2>Empowering Commerce in Lagos</h2>
+                    <p>Connect with leading enterprises and accelerate your growth.</p>
+                    <a href="join.html" class="cta-btn">Join the Chamber</a>
+                </div>
+            </section>
+
+            <div class="home-grid">
+                <section class="home-card events-card">
+                    <h2>Upcoming Events</h2>
+                    <hr class="card-divider">
+                    <div class="event-item">
+                        <h3>West Africa Trade Summit 2026</h3>
+                        <p class="event-date">October 15, 2026 | 09:00 AM</p>
+                        <p>Eko Convention Centre, Victoria Island</p>
+                    </div>
+                    <div class="event-item">
+                        <h3>SME Digital Growth Workshop</h3>
+                        <p class="event-date">November 03, 2026 | 02:00 PM</p>
+                        <p>Ikeja Innovation Hub & Virtual Stream</p>
+                    </div>
+                </section>
+
+                <section class="home-card weather-card">
+                    <h2>Lagos Weather</h2>
+                    <hr class="card-divider">
+                    <div id="weather-content" class="weather-content">
+                        <p>Loading weather forecast...</p>
+                    </div>
+                </section>
+
+                <section class="home-card spotlights-card">
+                    <h2>Member Spotlights</h2>
+                    <hr class="card-divider">
+                    <div id="spotlight-cards" class="spotlight-grid">
+                        <p>Loading spotlight members...</p>
+                    </div>
+                </section>
+
+            </div>
+
         </main>
 
-        <!-- This is the footer -->
+        <!-- This is my footer -->
         <footer>
             <div class="footer-container">
                 <div class="footer-left">
@@ -85,19 +123,17 @@
                 </div>
                 <div class="footer-center">
                     <div class="social-icons">
-                        <a href="https://facebook.com/profile.php?id=100001974445466" target="_blank" rel="noopener"
-                            aria-label="Facebook Profile">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook Profile">
                             <img src="./images/facebook.svg" alt="Facebook logo" width="44" height="44" loading="lazy">
                         </a>
                         <a href="https://github.com/Legendairee" target="_blank" rel="noopener"
                             aria-label="GitHub Profile">
                             <img src="./images/github.svg" alt="GitHub logo" width="44" height="44" loading="lazy">
                         </a>
-                        <a href="https://www.linkedin.com/in/mathew-udowa-0b61343a7/" target="_blank" rel="noopener"
-                            aria-label="LinkedIn Profile">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
                             <img src="./images/linkedin.svg" alt="LinkedIn logo" width="44" height="44" loading="lazy">
                         </a>
-                        <a href="https://x.com/DayWalkercrypt" target="_blank" rel="noopener" aria-label="X Profile">
+                        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X Profile">
                             <img src="./images/twitter-x.svg" alt="X logo" width="44" height="44" loading="lazy">
                         </a>
                     </div>
@@ -110,6 +146,7 @@
                 </div>
             </div>
         </footer>
+
     </body>
 
 </html>

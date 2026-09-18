@@ -34,7 +34,8 @@
         font-size: 2.5rem;
     }
 
-    .directory-header h1 {
+    .directory-header h1,
+    .page-header h1 {
         font-size: 2.2rem;
     }
 
@@ -48,6 +49,61 @@
         border-radius: 0;
         gap: 0.8rem;
     }
+
+
+    /* ===========================================
+   This is my home page desktop layout
+   =============================================== */
+
+    .hero-cta {
+        padding: 1.5rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        row-gap: 0.3rem;
+        column-gap: 1.5rem;
+        text-align: left;
+    }
+
+    .hero-cta h2,
+    .hero-cta p {
+        grid-column: 1;
+    }
+
+    .hero-cta .cta-btn {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        justify-self: end;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.2fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .spotlights-card {
+        grid-column: 1/-1;
+    }
+
+    .events-card {
+        grid-column: 1/3;
+    }
+
+    .events-card,
+    .weather-card {
+        height: 250px;
+    }
+
+    .spotlight-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+
 
     /* This is the footer section */
     .footer-container {

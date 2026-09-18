@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1e3a8a;
-    --secondary-color: #0d9488;
+    --secondary-color: #034842;
     --background-color: #ffffff;
     --card-bg: #e5e7eb;
     --card-border: #b0b0b0;
@@ -133,11 +133,13 @@ main {
     width: 100%;
 }
 
-.directory-header h1 {
+.directory-header h1,
+.page-header h1 {
     text-align: left;
     font-size: 1.1rem;
     font-weight: bold;
     color: #1f2937;
+    margin-bottom: 1rem;
 }
 
 .view-buttons {
@@ -307,6 +309,202 @@ main {
     text-decoration: underline;
     word-break: break-all;
 }
+
+
+
+
+/* ===============================================
+   This is the css rule for my home page
+   =============================================== */
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* This is my hero section */
+.hero-container {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.85);
+    color: #ffffff;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.hero-cta h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.hero-cta p {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.cta-btn:hover {
+    background-color: #0f766e;
+}
+
+/* This is the home Layout Cards */
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-card h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.event-item {
+    margin-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.event-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.event-item h3 {
+    font-size: 1rem;
+    color: #1f2937;
+}
+
+.event-date {
+    font-size: 0.82rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* This is my weather section */
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.current-weather .temp {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.current-weather .desc {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.forecast-section {
+    margin-top: 1rem;
+    border-top: 1px solid var(--card-border);
+    padding-top: 0.5rem;
+}
+
+.forecast-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.forecast-day {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    padding: 0.2rem 0;
+}
+
+
+ /* This is the Spotlights Grid section */
+.spotlight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.spotlight-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.8rem;
+}
+
+.spotlight-header h3 {
+    font-size: 1rem;
+    color: #111827;
+}
+
+.spotlight-header .tagline {
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.spotlight-body {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.spotlight-body img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.spotlight-info {
+    font-size: 0.8rem;
+    line-height: 1.25;
+}
+
+.spotlight-info a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
 
 /* This is the footer  */
 footer {
