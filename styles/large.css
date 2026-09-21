@@ -101,6 +101,16 @@
         font-weight: 500;
     }
 
+    dialog {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .dialog-content {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
     /* The Footer */
     .social img {
         width: 50px;

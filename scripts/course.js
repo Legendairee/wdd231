@@ -70,7 +70,37 @@ const wddBtn = document.querySelector("#wdd");
 const cseBtn = document.querySelector("#cse");
 
 
-// This is the function that display the courses
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+    <div class="dialog-header">
+      <h2>${course.subject} ${course.number}</h2>
+      <button id="closeModal" type="button" aria-label="Close dialog">X</button>
+    </div>
+    <div class="dialog-body">
+      <h3>${course.title}</h3>
+      <p><strong>${course.credits} credits</strong></p>
+      <p><strong>Certificate:</strong> ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+    </div>
+  `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
+
 function displayCourses(courseArray) {
     const totalCredits = courseArray.reduce((sum, course) => {
         return sum + course.credits;
@@ -78,13 +108,20 @@ function displayCourses(courseArray) {
 
     courseCount.textContent = `The total number of course credits listed above is ${totalCredits}`;
 
-    courseList.innerHTML = courseArray.map(course => {
-        return `
-            <div class="course-card ${course.completed ? 'completed' : ''}">
-                ${course.completed ? '✓ ' : ''}${course.subject} ${course.number}
-            </div>
-        `;
-    }).join('');
+    courseList.innerHTML = "";
+
+    courseArray.forEach(course => {
+        const courseDiv = document.createElement("button");
+        courseDiv.type = "button";
+        courseDiv.className = `course-card ${course.completed ? 'completed' : ''}`;
+        courseDiv.textContent = `${course.completed ? '✓ ' : ''}${course.subject} ${course.number}`;
+
+        courseDiv.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        courseList.appendChild(courseDiv);
+    });
 }
 
 
