@@ -1,0 +1,13 @@
+#openButton {
+    background-color: aqua;
+}
+#dialogBox {
+    background-color: lavender;
+}
+#closeButton {
+    background-color: violet;
+}
+
+::backdrop {
+    background-color: rgba(255, 128, 0, 0.50)
+}
