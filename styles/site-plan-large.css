@@ -1,0 +1,34 @@
+@media only screen and (min-width: 38rem) {
+
+    p,
+    li {
+        margin-bottom: 1rem;
+    }
+
+    .card-section {
+        padding: 1rem;
+    }
+
+    .wireframe-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .wireframe-box.mobile-box {
+        flex: 1;
+        max-width: 320px;
+    }
+
+    .wireframe-box.desktop-box {
+        flex: 2;
+    }
+
+    .scenario-item {
+        border-left: 4px solid var(--secondary-green);
+        border-top: 0;
+    }
+
+    .footer-info p {
+        font-size: 1rem;
+    }
+}
