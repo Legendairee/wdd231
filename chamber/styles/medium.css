@@ -38,6 +38,13 @@
         gap: 1.5rem;
     }
 
+    .discover-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        min-height: 1000px;
+    }
+
     .discover-card {
         display: grid;
         gap: 0.8rem;
@@ -73,5 +80,20 @@
     .card-img img:hover {
         transform: scale(1.2);
         filter: brightness(1.2);
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-center {
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: right;
     }
 }
