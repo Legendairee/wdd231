@@ -5,21 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
-            content="Welcome to the Eko Chamber of Commerce. Connecting, empowering, and advocating for private enterprises and commercial leaders across Lagos State.">
+            content="Discover Lagos State, Explore demographic insights, commercial hubs and iconic landmarks with Eko Chamber of Commerce.">
         <meta name="keywords"
-            content="Eko Chamber of Commerce, Lagos Businesses, Business Network, Trade Nigeria, Commerce Lagos">
+            content="Lagos Demographics, Discover Lagos, Eko Chamber, Lekki Port, Eko Atlantic, Lagos Business Hubs">
         <meta name="author" content="Eko Chamber of Commerce">
-        <meta property="og:title" content="Eko Chamber of Commerce | Home">
+
+        <meta property="og:title" content="Discover Lagos | Eko Chamber of Commerce">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://legendairee.github.io/wdd231/chamber/index.html">
+        <meta property="og:url" content="https://legendairee.github.io/wdd231/chamber/discover.html">
         <meta property="og:image" content="https://legendairee.github.io/wdd231/chamber/images/facebook-tag.jpg">
         <meta property="og:description"
-            content="Empowering enterprise across Lagos. Join the premier network of business leaders and innovative startups today.">
+            content="Explore economic hubs, landmarks, and demographic growth driving commercial leadership in Lagos State.">
         <meta property="og:site_name" content="Eko Chamber of Commerce">
-        <title>Eko Chamber of Commerce | Home</title>
 
-        <link rel="canonical" href="https://legendairee.github.io/wdd231/chamber/index.html">
-        <link rel="preconnect" href="https://api.openweathermap.org">
+        <title>Discover Lagos | Eko Chamber of Commerce</title>
+
+        <link rel="canonical" href="https://legendairee.github.io/wdd231/chamber/discover.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet"
@@ -30,20 +31,17 @@
                 href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..600;1,100..600&display=swap">
         </noscript>
 
-        <link rel="preload" as="image" href="./images/hero.webp" fetchpriority="high">
         <link rel="icon" href="./images/head-image.ico">
-
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/medium.css">
         <link rel="stylesheet" href="./styles/large.css">
 
-        <script type="module" src="scripts/main.js"></script>
+        <script type="module" src="scripts/discover-main.js"></script>
     </head>
 
     <body>
-
-        <!-- This is my header section -->
+        <!-- This is the header section -->
         <header>
             <img src="./images/logoipsum-339.webp" alt="Eko Chamber Logo" width="60" height="60" decoding="async">
             <span>Eko Chamber of Commerce</span>
@@ -51,68 +49,63 @@
             <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
         </header>
 
-        <!-- This is the navigation -->
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
-
-        <!-- This is the home page main content -->
-        <main class="home-main">
+        <!-- This is the main -->
+        <main class="discover-main">
             <div class="page-header">
-                <h1>Home</h1>
+                <h1>Discover Lagos State</h1>
             </div>
 
-            <section class="hero-container">
-                <img src="./images/hero.webp" alt="Lagos Business Skyline" class="hero-img" loading="eager"
-                    fetchpriority="high" width="1200" height="500">
-                <div class="hero-cta">
-                    <h2>Empowering Commerce in Lagos</h2>
-                    <p>Connect with leading enterprises and accelerate your growth.</p>
-                    <a href="join.html" class="cta-btn">Join the Chamber</a>
+            <div class="discover-layout">
+                <aside class="discover-sidebar">
+                    <section class="sidebar-card visit-card">
+                        <h2>Visitor Center</h2>
+                        <p id="visit-message" class="visit-message">Loading visitor status...</p>
+                    </section>
+
+                    <section class="sidebar-card stats-card">
+                        <h2>Lagos Socio-Economic Profile</h2>
+                        <ul class="stats-list">
+                            <li><strong>Population:</strong> ~21+ Million</li>
+                            <li><strong>Area:</strong> 3,577 sq km</li>
+                            <li><strong>State Capital:</strong> Ikeja</li>
+                            <li><strong>Economic Rank:</strong> Top 5 GDP in Africa</li>
+                            <li><strong>Key Sectors:</strong> Tech, Trade, Logistics, Finance</li>
+                        </ul>
+                    </section>
+                </aside>
+
+                <section class="discover-content">
+                    <div id="discover-cards" class="discover-cards-container">
+                        
+                    </div>
+                </section>
+            </div>
+            <dialog id="discover-modal" class="discover-modal">
+                <div class="modal-content">
+                    <button id="close-modal" class="modal-close" aria-label="Close modal">&times;</button>
+                    <h2 id="modal-title"></h2>
+            
+                    <div class="modal-meta-info">
+                        <p><strong>Operating Hours:</strong> <span id="modal-hours"></span></p>
+                        <p><strong>Admission / Entry:</strong> <span id="modal-fee"></span></p>
+                        <p><strong>Key Metrics & Impact:</strong> <span id="modal-stats"></span></p>
+                    </div>
+            
+                    <hr class="card-divider">
+            
+                    <h3>Detailed Background & Insights</h3>
+                    <p id="modal-detailed-info" class="modal-body-text"></p>
                 </div>
-            </section>
-
-            <div class="home-grid">
-                <section class="home-card events-card">
-                    <h2>Upcoming Events</h2>
-                    <hr class="card-divider">
-                    <div class="event-item">
-                        <h3>West Africa Trade Summit 2026</h3>
-                        <p class="event-date">October 15, 2026 | 09:00 AM</p>
-                        <p>Eko Convention Centre, Victoria Island</p>
-                    </div>
-                    <div class="event-item">
-                        <h3>SME Digital Growth Workshop</h3>
-                        <p class="event-date">November 03, 2026 | 02:00 PM</p>
-                        <p>Ikeja Innovation Hub & Virtual Stream</p>
-                    </div>
-                </section>
-
-                <section class="home-card weather-card">
-                    <h2>Lagos Weather</h2>
-                    <hr class="card-divider">
-                    <div id="weather-content" class="weather-content">
-                        <p>Loading weather forecast...</p>
-                    </div>
-                </section>
-
-                <section class="home-card spotlights-card">
-                    <h2>Member Spotlights</h2>
-                    <hr class="card-divider">
-                    <div id="spotlight-cards" class="spotlight-grid">
-                        <p>Loading spotlight members...</p>
-                    </div>
-                </section>
-
-            </div>
-
+            </dialog>
         </main>
-
         <!-- This is my footer -->
         <footer>
             <div class="footer-container">
@@ -148,7 +141,7 @@
                 </div>
             </div>
         </footer>
-
+        
     </body>
 
 </html>
