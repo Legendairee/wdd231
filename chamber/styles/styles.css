@@ -889,13 +889,6 @@ header span {
     border-radius: 6px;
 }
 
-.card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .card-address {
     grid-area: address;
     font-style: normal;
@@ -980,13 +973,13 @@ header span {
     backdrop-filter: blur(3px);
 }
 
-.modal-content {
+.discover-modal-content {
     padding: 1.8rem;
     position: relative;
     color: var(--text-color);
 }
 
-.modal-close {
+.discover-modal-close {
     position: absolute;
     top: 1rem;
     right: 1.2rem;
