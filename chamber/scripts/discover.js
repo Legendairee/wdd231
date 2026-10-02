@@ -39,26 +39,37 @@ function handleVisitorMessage(element) {
 }
 
 function renderDiscoverCards(items, container) {
-    container.innerHTML = items.map((item, index) => `
-    <section class="discover-card">
-      <h2 class="card-title">${item.title}</h2>
-      <figure class="card-img">
-        <img src="${item.image}" alt="${item.alt}" loading="lazy" width="300" height="200">
-      </figure>
-      <address class="card-address">
-        ${item.address}<br>
-        <small>${item.category}</small>
-      </address>
-      <p class="card-desc">${item.description}</p>
-      <button class="card-btn card-btn-styled learn-more-btn" data-index="${index}" aria-label="Learn more about ${item.title}">Learn More</button>
-    </section>
-  `).join("");
+    container.innerHTML = items.map((item, index) => {
+        const isFirst = index === 0;
+        const loadingAttr = isFirst ? 'loading="eager"' : 'loading="lazy"';
+        const priorityAttr = isFirst ? 'fetchpriority="high"' : '';
+
+        return `
+        <section class="discover-card">
+          <h2 class="card-title">${item.title}</h2>
+          <figure class="card-img">
+            <img src="${item.image}" 
+                 alt="${item.alt}" 
+                 ${loadingAttr} 
+                 ${priorityAttr} 
+                 width="300" 
+                 height="200">
+          </figure>
+          <address class="card-address">
+            ${item.address}<br>
+            <small>${item.category}</small>
+          </address>
+          <p class="card-desc">${item.description}</p>
+          <button class="card-btn card-btn-styled learn-more-btn" data-index="${index}" aria-label="Learn more about ${item.title}">Learn More</button>
+        </section>
+      `;
+    }).join("");
 }
 
 function setupModalEvents(items) {
     const modal = document.querySelector("#discover-modal");
     const closeBtn = document.querySelector("#close-modal");
-    
+
     const modalTitle = document.querySelector("#modal-title");
     const modalHours = document.querySelector("#modal-hours");
     const modalFee = document.querySelector("#modal-fee");
