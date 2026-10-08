@@ -35,10 +35,10 @@
             <header>
                 <img src="images/logoipsum-247.webp" alt="Nigerian States Explorer Logo" width="42" height="42">
                 <span>Nigerian States Explorer</span>
-                <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+                <button id="hamburger-button" class="hamburger" aria-label="Toggle navigation menu"></button>
             </header>
         
-            <nav id="nav-bar" class="navigation">
+            <nav id="navigation-button" class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="states.html">States Directory</a></li>
@@ -59,25 +59,25 @@
             <form method="GET" action="thankyou.html" class="contact-form">
 
                 <label>
-                    <span class="label-text">Full Name <span class="required">*</span></span>
+                    <span class="label-text">Full Name <span class="required-field">*</span></span>
                     <input type="text" name="fullname" required autocomplete="name" placeholder="Example: Chinedu Okeke"
                         title="Please enter your full name">
                 </label>
 
                 <label>
-                    <span class="label-text">Email Address <span class="required">*</span></span>
+                    <span class="label-text">Email Address <span class="required-field">*</span></span>
                     <input type="email" name="email" required autocomplete="email" placeholder="example@gmail.com"
                         title="Please enter a valid email">
                 </label>
 
                 <label>
-                    <span class="label-text">Phone Number <span class="optional">(optional)</span></span>
+                    <span class="label-text">Phone Number <span class="optional field">(optional)</span></span>
                     <input type="tel" name="phone" autocomplete="tel" placeholder="0803-123-4567"
                         title="Optional phone number">
                 </label>
 
                 <label>
-                    <span class="label-text">Reason for Contact <span class="required">*</span></span>
+                    <span class="label-text">Reason for Contact <span class="required-field">*</span></span>
                     <select name="reason" required>
                         <option value="">-- Select a reason --</option>
                         <option value="Suggestion">Suggestion</option>
@@ -88,12 +88,12 @@
                 </label>
 
                 <label>
-                    <span class="label-text">Your Message <span class="required">*</span></span>
+                    <span class="label-text">Your Message <span class="required-field">*</span></span>
                     <textarea name="message" required rows="5" placeholder="Type your message here..."
                         title="Please write your message"></textarea>
                 </label>
 
-                <button type="submit" class="action-btn action-btn-primary submit-btn">Send Message</button>
+                <button type="submit" class="action-btn action-btn-primary submit-button">Send Message</button>
             </form>
         </main>
 

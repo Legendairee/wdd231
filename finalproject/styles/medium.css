@@ -58,26 +58,26 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .bottom-cta {
+    .bottom-call-to {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 2rem 2.5rem;
     }
 
-    .cta-text {
+    .call-to-text {
         flex: 1;
         padding-right: 2rem;
     }
 
-    .cta-buttons {
+    .call-to-buttons {
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
         min-width: 220px;
     }
 
-    .cta-buttons .action-btn {
+    .call-to-buttons .action-btn {
         width: 100%;
         text-align: center;
     }

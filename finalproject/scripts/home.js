@@ -74,7 +74,7 @@ async function loadFeaturedStates() {
           <h3>${state.name} State</h3>
           <p>Capital: ${state.capital}</p>
           <span class="zone-badge">${state.zone}</span>
-          <button class="details-btn" data-id="${state.id}">View Details</button>
+          <button class="details-button" data-id="${state.id}">View Details</button>
         </article>`;
     }).join('');
 
@@ -91,7 +91,7 @@ async function loadFeaturedStates() {
 }
 
 function addCardEvents() {
-  const detailButtons = document.querySelectorAll('.details-btn');
+  const detailButtons = document.querySelectorAll('.details-button');
   detailButtons.forEach(button => {
     button.addEventListener('click', () => {
       const id = Number(button.dataset.id);

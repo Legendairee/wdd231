@@ -263,7 +263,7 @@ main {
     margin-bottom: 0.8rem;
 }
 
-.details-btn {
+.details-button {
     background-color: var(--secondary-green);
     color: var(--card-bg);
     border: none;
@@ -275,11 +275,11 @@ main {
     margin-top: auto;
 }
 
-.details-btn:hover {
+.details-button:hover {
     background-color: var(--accent-gold);
 }
 
-.bottom-cta {
+.bottom-call-to {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -290,7 +290,7 @@ main {
     margin-top: 2rem;
 }
 
-.cta-text h2 {
+.call-to-text h2 {
     font-family: var(--heading-font);
     color: var(--primary-green);
     font-size: 1.3rem;
@@ -406,7 +406,7 @@ main {
     font-size: 0.95rem;
 }
 
-.clear-btn {
+.clear-button {
     background: none;
     border: none;
     color: var(--accent-gold);
@@ -455,8 +455,8 @@ main {
     margin-top: 0.5rem;
 }
 
-.details-btn,
-.fav-button {
+.details-button,
+.favourites-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -470,8 +470,8 @@ main {
     width: 100%;
 }
 
-.card-actions .details-btn,
-.card-actions .fav-button {
+.card-actions .details-button,
+.card-actions .favourites-button {
     flex: 1;
     width: auto;
     padding: 0.6rem 0.3rem;
@@ -479,12 +479,12 @@ main {
     white-space: nowrap;
 }
 
-.fav-button {
+.favourites-button {
     background-color: #f3f4f6;
     color: var(--text-dark);
 }
 
-.fav-button.favourited {
+.favourites-button.favourited {
     background-color: var(--accent-gold);
     color: var(--card-bg);
 }
@@ -595,18 +595,18 @@ main {
     border-color: var(--secondary-green);
 }
 
-.required {
+.required-field {
     color: #6a0303;
     font-weight: 700;
 }
 
-.optional {
+.optional-field {
     color: #1b1e23;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-.submit-btn {
+.submit-button {
     margin-top: 0.5rem;
     width: 100%;
     padding: 0.85rem;

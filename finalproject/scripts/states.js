@@ -10,8 +10,8 @@ const favKey = 'favouriteStates';
 const container = document.getElementById('states-container');
 const searchInput = document.getElementById('search-input');
 const zoneFilter = document.getElementById('zone-filter');
-const favCount = document.getElementById('fav-count');
-const clearBtn = document.getElementById('clear-favs');
+const favCount = document.getElementById('favourites-count');
+const clearBtn = document.getElementById('clear-favourites');
 const modal = document.getElementById('state-modal');
 const modalBody = document.getElementById('dialog-body');
 const modalClose = document.getElementById('dialog-close-btn');
@@ -62,8 +62,8 @@ function displayStates(statesArray) {
         <p><strong>Population:</strong> ${state.population}</p>
 
         <div class="card-actions">
-          <button class="details-btn" data-id="${state.id}">View Details</button>
-          <button class="fav-button ${isFav ? 'favourited' : ''}" data-id="${state.id}">
+          <button class="details-button" data-id="${state.id}">View Details</button>
+          <button class="favourites-button ${isFav ? 'favourited' : ''}" data-id="${state.id}">
             ${isFav ? '★ Favourited' : '☆ Add Favourite'}
           </button>
         </div>
@@ -162,7 +162,7 @@ modal.addEventListener('click', (event) => {
 
 
 function addCardEvents() {
-    const detailButtons = document.querySelectorAll('.details-btn');
+    const detailButtons = document.querySelectorAll('.details-button');
     detailButtons.forEach(button => {
         button.addEventListener('click', () => {
             const id = Number(button.dataset.id);
@@ -173,7 +173,7 @@ function addCardEvents() {
         });
     });
 
-    const favButtons = document.querySelectorAll('.fav-button');
+    const favButtons = document.querySelectorAll('.favourites-button');
     favButtons.forEach(button => {
         button.addEventListener('click', () => {
             const id = Number(button.dataset.id);
