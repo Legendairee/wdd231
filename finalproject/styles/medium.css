@@ -65,11 +65,6 @@
         padding: 2rem 2.5rem;
     }
 
-    .cta {
-        display: flex;
-        flex-direction: row;
-    }
-
     .cta-text {
         flex: 1;
         padding-right: 2rem;
@@ -82,7 +77,7 @@
         min-width: 220px;
     }
 
-    .cta-buttons .btn {
+    .cta-buttons .action-btn {
         width: 100%;
         text-align: center;
     }

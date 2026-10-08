@@ -121,7 +121,7 @@ header span {
 
 .navigation a:hover,
 .navigation li.current a {
-    background-color: var(--secondary-green);
+    background-color: var(--accent-gold);
     color: var(--card-bg);
 }
 
@@ -169,7 +169,7 @@ main {
     display: none;
 }
 
-.btn {
+.action-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -183,22 +183,22 @@ main {
     border: 2px solid transparent;
 }
 
-.btn-primary {
+.action-btn-primary {
     background-color: var(--secondary-green);
     color: var(--card-bg);
 }
 
-.btn-primary:hover {
+.action-btn-primary:hover {
     background-color: var(--accent-gold);
 }
 
-.btn-outline {
+.action-btn-outline {
     background-color: transparent;
     border-color: var(--primary-green);
     color: var(--primary-green);
 }
 
-.btn-outline:hover {
+.action-btn-outline:hover {
     background-color: var(--primary-green);
     color: var(--card-bg);
 }
@@ -297,13 +297,13 @@ main {
     margin-bottom: 0.6rem;
 }
 
-.btn-green {
+.action-btn-green {
     background-color: var(--accent-gold);
     margin-bottom: 0.8rem;
     color: white;
 }
 
-.btn-green:hover {
+.action-btn-green:hover {
     background-color: var(--secondary-green);
 }
 
@@ -325,19 +325,7 @@ main {
     margin-bottom: 0.75rem;
 }
 
-.cta {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.cta .btn {
-    flex: 1;
-    text-align: center;
-}
-
-.loading {
+.is-loading {
     text-align: center;
     color: #262a30;
     padding: 2rem;
@@ -462,31 +450,13 @@ main {
 
 .card-actions {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1rem;
-}
-
-.directory-card h2 {
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    color: var(--primary-green);
-}
-
-.directory-card p {
-    font-size: 0.95rem;
-    color: #374151;
-}
-
-.card-actions {
-    display: flex;
     flex-direction: row;
     gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
 .details-btn,
-.fav-btn {
+.fav-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -501,7 +471,7 @@ main {
 }
 
 .card-actions .details-btn,
-.card-actions .fav-btn {
+.card-actions .fav-button {
     flex: 1;
     width: auto;
     padding: 0.6rem 0.3rem;
@@ -509,22 +479,17 @@ main {
     white-space: nowrap;
 }
 
-.details-btn {
-    background-color: var(--secondary-green);
-    color: var(--card-bg);
-}
-
-.fav-btn {
+.fav-button {
     background-color: #f3f4f6;
     color: var(--text-dark);
 }
 
-.fav-btn.favourited {
+.fav-button.favourited {
     background-color: var(--accent-gold);
     color: var(--card-bg);
 }
 
-.modal {
+.dialog-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -538,11 +503,11 @@ main {
     padding: 1rem;
 }
 
-.modal[hidden] {
+.dialog-overlay[hidden] {
     display: none;
 }
 
-.modal-content {
+.dialog-box {
     background-color: var(--card-bg);
     border-radius: 12px;
     padding: 1.5rem;
@@ -562,7 +527,7 @@ main {
     margin-bottom: 1rem;
 }
 
-.modal-close {
+.dialog-close-btn {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -578,14 +543,14 @@ main {
     justify-content: center;
 }
 
-.modal-body h2 {
+.dialog-body h2 {
     font-family: var(--heading-font);
     color: var(--primary-green);
     margin-bottom: 1rem;
     padding-right: 1.5rem;
 }
 
-.modal-body p {
+.dialog-body p {
     margin-bottom: 0.6rem;
 }
 

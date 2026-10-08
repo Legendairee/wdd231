@@ -14,14 +14,14 @@
 
         <title>States Directory | Nigerian States Explorer</title>
 
-        
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
             rel="stylesheet">
-        
+
         <link rel="icon" href="images/favicon.ico">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/small.css">
@@ -41,8 +41,8 @@
             <!-- The navigation section -->
             <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="states.html">States Directory</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="states.html">States Directory</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -74,16 +74,16 @@
             </p>
 
             <div id="states-container" class="states-container">
-                <p class="loading">Loading states...</p>
+                <p class="is-loading">Loading states...</p>
             </div>
         </main>
-        
+
         <!-- The modal section -->
-        <div id="state-modal" class="modal" hidden>
-            <div class="modal-content">
-                <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
-                <div id="modal-body">
-                    
+        <div id="state-modal" class="dialog-overlay" hidden>
+            <div class="dialog-box">
+                <button class="dialog-close-btn" id="dialog-close-btn" aria-label="Close modal">&times;</button>
+                <div id="dialog-body">
+
                 </div>
             </div>
         </div>

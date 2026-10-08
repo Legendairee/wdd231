@@ -13,8 +13,8 @@ const zoneFilter = document.getElementById('zone-filter');
 const favCount = document.getElementById('fav-count');
 const clearBtn = document.getElementById('clear-favs');
 const modal = document.getElementById('state-modal');
-const modalBody = document.getElementById('modal-body');
-const modalClose = document.getElementById('modal-close');
+const modalBody = document.getElementById('dialog-body');
+const modalClose = document.getElementById('dialog-close-btn');
 
 async function loadStates() {
     try {
@@ -30,13 +30,13 @@ async function loadStates() {
 
     } catch (error) {
         console.error(error);
-        container.innerHTML = '<p class="loading">Sorry, we could not load the states right now.</p>';
+        container.innerHTML = '<p class="is-loading">Sorry, we could not load the states right now.</p>';
     }
 }
 
 function displayStates(statesArray) {
     if (statesArray.length === 0) {
-        container.innerHTML = '<p class="loading">No states found. Try a different search.</p>';
+        container.innerHTML = '<p class="is-loading">No states found. Try a different search.</p>';
         return;
     }
 
@@ -63,7 +63,7 @@ function displayStates(statesArray) {
 
         <div class="card-actions">
           <button class="details-btn" data-id="${state.id}">View Details</button>
-          <button class="fav-btn ${isFav ? 'favourited' : ''}" data-id="${state.id}">
+          <button class="fav-button ${isFav ? 'favourited' : ''}" data-id="${state.id}">
             ${isFav ? '★ Favourited' : '☆ Add Favourite'}
           </button>
         </div>
@@ -173,7 +173,7 @@ function addCardEvents() {
         });
     });
 
-    const favButtons = document.querySelectorAll('.fav-btn');
+    const favButtons = document.querySelectorAll('.fav-button');
     favButtons.forEach(button => {
         button.addEventListener('click', () => {
             const id = Number(button.dataset.id);

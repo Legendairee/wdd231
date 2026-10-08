@@ -7,8 +7,8 @@ initFooter();
 let allStates = [];
 
 const modal = document.getElementById('state-modal');
-const modalBody = document.getElementById('modal-body');
-const modalClose = document.getElementById('modal-close');
+const modalBody = document.getElementById('dialog-body');
+const modalClose = document.getElementById('dialog-close-btn');
 
 function openModal(state) {
   modalBody.innerHTML = `
@@ -85,7 +85,7 @@ async function loadFeaturedStates() {
   } catch (error) {
     console.error('Error loading featured states:', error);
     container.innerHTML = `
-      <p class="loading">Sorry, we could not load the featured states at this time.</p>
+      <p class="is-loading">Sorry, we could not load the featured states at this time.</p>
     `;
   }
 }
