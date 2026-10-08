@@ -297,7 +297,7 @@ main {
     margin-bottom: 0.6rem;
 }
 
-.action-btn-green {
+.action-button-green {
     background-color: var(--accent-gold);
     margin-bottom: 0.8rem;
     color: white;
