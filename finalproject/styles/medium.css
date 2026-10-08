@@ -1,0 +1,112 @@
+@media screen and (min-width: 44.06rem) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.9rem 1.5rem;
+    }
+
+    header img {
+        width: 48px;
+        height: 48px;
+    }
+
+    header span {
+        font-size: 1.3rem;
+        text-align: left;
+        margin-left: 0.75rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0 1.5rem;
+        margin: 0;
+    }
+
+    .navigation a {
+        padding: 0.5rem 0.9rem;
+        border-bottom: none;
+    }
+
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-image {
+        flex: 1;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-cta {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 2.5rem;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cta-text {
+        flex: 1;
+        padding-right: 2rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        min-width: 220px;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .controls {
+        flex-direction: row;
+    }
+
+    .search-input {
+        flex: 2;
+    }
+
+    .zone-filter {
+        flex: 1;
+    }
+
+    .states-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .card-actions {
+        display: flex;
+        flex-direction: row;
+    }
+}

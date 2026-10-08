@@ -1,0 +1,768 @@
+:root {
+    --primary-green: #064E3B;
+    --secondary-green: #02553e;
+    --accent-gold: #824702;
+    --bg-light: #F8FAF9;
+    --card-bg: #FFFFFF;
+    --text-dark: #111827;
+    --border-color: #E5E7EB;
+    --body-font: 'Inter', system-ui, sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* This is the Header  Section */
+
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 42px auto 44px;
+    background-color: var(--primary-green);
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-color);
+    gap: 15px;
+}
+
+header img {
+    display: block;
+    width: 42px;
+    height: auto;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--card-bg);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--card-bg);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Tahoma, sans-serif;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    background-color: var(--primary-green);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.82rem 1rem;
+    font-size: 1.1rem;
+    color: var(--card-bg);
+    font-weight: 500;
+    font-family: var(--heading-font);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navigation a:hover,
+.navigation li.current a {
+    background-color: var(--secondary-green);
+    color: var(--card-bg);
+}
+
+/* ======== The Home page ========== */
+
+/* This is the Main Section */
+main {
+    flex: 1;
+    padding: 1.25rem 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-text h1 {
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.hero-text p {
+    margin-bottom: 1.5rem;
+    color: #374151;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: 0.25s;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--secondary-green);
+    color: var(--card-bg);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-green);
+    color: var(--card-bg);
+}
+
+/* Featured States Section */
+.featured {
+    margin-bottom: 2.5rem;
+}
+
+.featured h2 {
+    font-family: var(--heading-font);
+    font-size: 1.35rem;
+    color: var(--primary-green);
+    margin-bottom: 1.25rem;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.state-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.state-card .state-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.state-card h3 {
+    font-family: var(--heading-font);
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.state-card p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.zone-badge {
+    display: inline;
+    background-color: var(--accent-gold);
+    color: var(--card-bg);
+    max-width: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.7rem;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.details-btn {
+    background-color: var(--secondary-green);
+    color: var(--card-bg);
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+}
+
+.details-btn:hover {
+    background-color: var(--accent-gold);
+}
+
+.bottom-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cta-text h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-green);
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.btn-green {
+    background-color: var(--accent-gold);
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: var(--secondary-green);
+}
+
+.about {
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.about-card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    color: var(--primary-green);
+    margin-bottom: 0.75rem;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cta .btn {
+    flex: 1;
+    text-align: center;
+}
+
+.loading {
+    text-align: center;
+    color: #262a30;
+    padding: 2rem;
+}
+
+/*  The Footer Section */
+.site-footer {
+    background-color: var(--primary-green);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: #a7f3d0;
+    text-decoration: underline;
+}
+
+.site-footer p {
+    margin: 0.3rem 0;
+}
+
+/* ===== This is the States Directory Page ===== */
+.directory-main {
+    padding: 1.25rem 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    margin-bottom: 0.4rem;
+}
+
+.page-intro {
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+}
+
+.directory-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.search-input,
+.zone-filter {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.search-input:focus,
+.zone-filter:focus {
+    outline: 2px solid var(--secondary-green);
+    border-color: var(--secondary-green);
+}
+
+
+.favourites-info {
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.clear-btn {
+    background: none;
+    border: none;
+    color: var(--accent-gold);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 0.4rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.states-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.directory-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.directory-card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--primary-green);
+    margin-bottom: 0.35rem;
+}
+
+.directory-card p {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.directory-card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--primary-green);
+}
+
+.directory-card p {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.details-btn,
+.fav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.card-actions .details-btn,
+.card-actions .fav-btn {
+    flex: 1;
+    width: auto;
+    padding: 0.6rem 0.3rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.details-btn {
+    background-color: var(--secondary-green);
+    color: var(--card-bg);
+}
+
+.fav-btn {
+    background-color: #f3f4f6;
+    color: var(--text-dark);
+}
+
+.fav-btn.favourited {
+    background-color: var(--accent-gold);
+    color: var(--card-bg);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 1rem;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #6b7280;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+}
+
+.modal-body p {
+    margin-bottom: 0.6rem;
+}
+
+/* ===== This is the Contact Page Section ===== */
+.contact-main {
+    padding: 1.25rem 1rem 2.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 0.35rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--secondary-green);
+    border-color: var(--secondary-green);
+}
+
+.required {
+    color: #6a0303;
+    font-weight: 700;
+}
+
+.optional {
+    color: #1b1e23;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.submit-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.05rem;
+}
+
+/* ===== This is the Thank you Page Section ===== */
+.thankyou-main {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thankyou-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.thankyou-card h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.thankyou-message {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.form-data {
+    text-align: left;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.form-data p {
+    margin-bottom: 0.6rem;
+}
+
+.thankyou-card .btn {
+    margin: 0.4rem;
+}
+
+
+/* ===== This is the Attributions Page Section ===== */
+.attributes-body {
+    background-color: var(--bg-light);
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.attributes-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem 1.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.attributes-body h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.attributes-body .intro {
+    margin-bottom: 2rem;
+    color: #4b5563;
+}
+
+.attributes-body h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-green);
+    font-size: 1.25rem;
+    margin: 1.8rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.attributes-body ul {
+    padding-left: 1.3rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.attributes-body li {
+    margin-bottom: 0.5rem;
+}
+
+.attributes-body a {
+    color: var(--primary-green);
+    text-decoration: underline;
+}
+
+.attributes-body a:hover {
+    color: var(--accent-gold);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    text-decoration: none;
+    border: 2px solid var(--primary-green);
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.back-link:hover {
+    background-color: var(--primary-green);
+    color: var(--card-bg);
+}

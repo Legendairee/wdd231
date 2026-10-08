@@ -1,0 +1,27 @@
+@media only screen and (min-width: 64.046rem) {
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 2rem;
+        flex-direction: row;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-image img {
+        display: block;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .states-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

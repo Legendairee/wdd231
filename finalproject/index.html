@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Discover the states and Federal Capital Territory of Nigeria. Learn about capitals, geopolitical zones, culture and interesting facts.">
+        <meta name="author" content="Mathew Udowa Oghenemairo">
+
+        <meta property="og:title" content="Nigerian States Explorer">
+        <meta property="og:description"
+            content="Explore the states of Nigeria - capitals, zones, population and interesting facts.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://legendairee.github.io/wdd231/finalproject/index.html">
+        <meta property="og:image" content="https://legendairee.github.io/wdd231/finalproject/images/nigeria.webp">
+
+        <title>Home | Nigerian States Explorer</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+            rel="stylesheet">
+
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script type="module" src="scripts/home.js"></script>
+    </head>
+
+    <body>
+
+        <div class="header-wrapper">
+            <!-- This is the header Section -->
+            <header>
+                <img src="images/logoipsum-247.webp" alt="Nigerian States Explorer Logo" width="42" height="42">
+                <span>Nigerian States Explorer</span>
+                <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+            </header>
+            <!-- The navigation section -->
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="states.html">States Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- This is the main section -->
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Discover the Diversity of Nigeria</h1>
+                    <p>
+                        Explore the rich diversity of Nigeria. Learn about each state's capital,
+                        geopolitical zone, population and unique facts in a simple and friendly way.
+                        Discover the culture, people and beauty of all 36 states and the FCT.
+                    </p>
+                    <a href="states.html" class="btn btn-primary">Explore All States</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/nigeria.webp" alt="Beautiful view of Nigeria" width="600" height="400"
+                        loading="eager" fetchpriority="high">
+                </div>
+            </section>
+
+            <section class="featured">
+                <h2>Featured States</h2>
+                <div class="featured-grid" id="featured-states">
+                    <p class="loading">Loading featured states...</p>
+                </div>
+            </section>
+
+            <section class="bottom-cta">
+                <div class="cta-text">
+                    <h2>Empowering Cultural Discovery</h2>
+                    <p>
+                        Learn about the unique identity of every Nigerian state.
+                        From the North to the South, discover facts, culture and history.
+                    </p>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="states.html" class="btn btn-green">View all States</a>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- This is the Modal -->
+        <div id="state-modal" class="modal" hidden>
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+                <div id="modal-body">
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- This is the footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Nigerian States Explorer</p>
+                <p>
+                    <a href="attributions.html">Attributions</a> |
+                    <a href="#">Terms and Conditions</a>
+                </p>
+                <p id="last-modified"></p>
+            </div>
+        </footer>
+    </body>
+
+</html>

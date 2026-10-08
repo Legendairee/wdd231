@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Lagos",
+        "capital": "Ikeja",
+        "zone": "South West",
+        "population": "15.9 million",
+        "slogan": "Centre of Excellence",
+        "fact": "Lagos is the most populous city in Africa and the economic hub of Nigeria",
+        "image": "images/lagos.webp"
+    },
+    {
+        "id": 2,
+        "name": "Kano",
+        "capital": "Kano",
+        "zone": "North West",
+        "population": "15.4 million",
+        "slogan": "Centre of Commerce",
+        "fact": "Kano is one of the oldest cities in West Africa and a major commercial centre.",
+        "image": "images/kano.webp"
+    },
+    {
+        "id": 3,
+        "name": "Delta",
+        "capital": "Asaba",
+        "zone": "South South",
+        "population": "5.9 million",
+        "slogan": "The Big Heart",
+        "fact": "Delta State is rich in oil and has beautiful riverine communities.",
+        "image": "images/delta.webp"
+    },
+    {
+        "id": 4,
+        "name": "Rivers",
+        "capital": "Port Harcourt",
+        "zone": "South South",
+        "population": "7.5 million",
+        "slogan": "Treasure Base of the Nation",
+        "fact": "Home to Nigeria's oil industry and the popular Port Harcourt city.",
+        "image": "images/rivers.webp"
+    },
+    {
+        "id": 5,
+        "name": "Oyo",
+        "capital": "Ibadan",
+        "zone": "South West",
+        "population": "8.4 million",
+        "slogan": "Pace Setter",
+        "fact": "Ibadan is the largest city in West Africa by land area.",
+        "image": "images/oyo.webp"
+    },
+    {
+        "id": 6,
+        "name": "Kaduna",
+        "capital": "Kaduna",
+        "zone": "North West",
+        "population": "9.0 million",
+        "slogan": "Centre of Learning",
+        "fact": "Known for its educational institutions and industrial activities.",
+        "image": "images/kaduna.webp"
+    },
+    {
+        "id": 7,
+        "name": "Enugu",
+        "capital": "Enugu",
+        "zone": "South East",
+        "population": "4.6 million",
+        "slogan": "Coal City State",
+        "fact": "Famous for its coal mining history and beautiful hills.",
+        "image": "images/enugu.webp"
+    },
+    {
+        "id": 8,
+        "name": "Anambra",
+        "capital": "Awka",
+        "zone": "South East",
+        "population": "5.9 million",
+        "slogan": "Light of the Nation",
+        "fact": "One of the most commercial and industrious states in Nigeria.",
+        "image": "images/anambra.webp"
+    },
+    {
+        "id": 9,
+        "name": "Ogun",
+        "capital": "Abeokuta",
+        "zone": "South West",
+        "population": "6.2 million",
+        "slogan": "Gateway State",
+        "fact": "Known as the Gateway State because of its location between Lagos and the rest of Nigeria.",
+        "image": "images/ogun.webp"
+    },
+    {
+        "id": 10,
+        "name": "Abuja (FCT)",
+        "capital": "Abuja",
+        "zone": "North Central",
+        "population": "3.8 million",
+        "slogan": "Centre of Unity",
+        "fact": "The Federal Capital Territory and seat of the Nigerian government.",
+        "image": "images/abuja.webp"
+    },
+    {
+        "id": 11,
+        "name": "Plateau",
+        "capital": "Jos",
+        "zone": "North Central",
+        "population": "4.4 million",
+        "slogan": "Home of Peace and Tourism",
+        "fact": "Famous for its cool climate, rocks, and tourist attractions.",
+        "image": "images/plateau.webp"
+    },
+    {
+        "id": 12,
+        "name": "Borno",
+        "capital": "Maiduguri",
+        "zone": "North East",
+        "population": "6.1 million",
+        "slogan": "Home of Peace",
+        "fact": "The largest state in Nigeria by land area.",
+        "image": "images/borno.webp"
+    },
+    {
+        "id": 13,
+        "name": "Cross River",
+        "capital": "Calabar",
+        "zone": "South South",
+        "population": "4.1 million",
+        "slogan": "The People’s Paradise",
+        "fact": "Home to the famous Calabar Carnival and beautiful natural parks.",
+        "image": "images/cross-river.webp"
+    },
+    {
+        "id": 14,
+        "name": "Edo",
+        "capital": "Benin City",
+        "zone": "South South",
+        "population": "4.5 million",
+        "slogan": "Heartbeat of the Nation",
+        "fact": "Rich in history and home to the ancient Benin Kingdom.",
+        "image": "images/edo.webp"
+    },
+    {
+        "id": 15,
+        "name": "Imo",
+        "capital": "Owerri",
+        "zone": "South East",
+        "population": "5.5 million",
+        "slogan": "Eastern Heartland",
+        "fact": "Known for its hospitality and educational institutions.",
+        "image": "images/imo.webp"
+    },
+    {
+        "id": 16,
+        "name": "Sokoto",
+        "capital": "Sokoto",
+        "zone": "North West",
+        "population": "5.3 million",
+        "slogan": "Seat of the Caliphate",
+        "fact": "Historical centre of the Sokoto Caliphate.",
+        "image": "images/sokoto.webp"
+    },
+    {
+        "id": 17,
+        "name": "Kwara",
+        "capital": "Ilorin",
+        "zone": "North Central",
+        "population": "3.6 million",
+        "slogan": "State of Harmony",
+        "fact": "Known for its peaceful coexistence of different cultures.",
+        "image": "images/kwara.webp"
+    },
+    {
+        "id": 18,
+        "name": "Akwa Ibom",
+        "capital": "Uyo",
+        "zone": "South South",
+        "population": "5.8 million",
+        "slogan": "Land of Promise",
+        "fact": "One of the major oil-producing states with beautiful coastline.",
+        "image": "images/uyo.webp"
+    }
+]

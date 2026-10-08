@@ -1,0 +1,5 @@
+import { initHeader } from './header.js';
+import { initFooter } from './footer.js';
+
+initHeader();
+initFooter();
