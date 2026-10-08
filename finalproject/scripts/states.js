@@ -134,7 +134,7 @@ function openModal(state) {
     <h2>${state.name} State</h2>
     <img src="${state.image}" 
          alt="${state.name} State" 
-         class="modal-image"
+         class="dialog-image"
          width="100%"
          height="200"
          loading="lazy">
