@@ -179,7 +179,7 @@ main {
     font-weight: 600;
     font-size: 0.95rem;
     text-align: center;
-    transition: 0.25s;
+    margin-bottom: 5px;
     border: 2px solid transparent;
 }
 
