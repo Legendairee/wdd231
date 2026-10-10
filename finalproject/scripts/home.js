@@ -53,7 +53,7 @@ async function loadFeaturedStates() {
 
     allStates = await response.json();
 
-    const featured = allStates.slice(0, 3);
+    const featured = allStates.slice(0, 4);
 
     container.innerHTML = '';
 
